@@ -31,5 +31,5 @@ data_0['permissions']['moderators']['users'] = []
 data['web']['bot_name'] = IRC_USER
 
 with open('config.json', 'w') as f:
-    f.write(json.dumps(data, indent=4))
+    json.dump(data, f, indent=4)
     f.write('\n')
