@@ -28,6 +28,8 @@ data_0['channels'] = []
 data_0['permissions']['admins']['users'] = []
 data_0['permissions']['moderators']['users'] = []
 
+data['plugin_loading']['blacklist'] = ['reddit', 'spotify']
+
 data['web']['bot_name'] = IRC_USER
 
 with open('config.json', 'w') as f:
