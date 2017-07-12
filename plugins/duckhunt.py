@@ -35,15 +35,15 @@ optout = Table(
 
 
 """
-game_status structure 
-{ 
+game_status structure
+{
     'network':{
         '#chan1':{
-            'duck_status':0|1|2, 
-            'next_duck_time':'integer', 
+            'duck_status':0|1|2,
+            'next_duck_time':'integer',
             'game_on':0|1,
             'no_duck_kick': 0|1,
-            'duck_time': 'float', 
+            'duck_time': 'float',
             'shoot_time': 'float',
             'messages': integer,
             'masks' : list
@@ -52,8 +52,8 @@ game_status structure
 }
 """
 
-MSG_DELAY = 10
-MASK_REQ = 3
+MSG_DELAY = 0
+MASK_REQ = 0
 scripters = defaultdict(int)
 game_status = defaultdict(lambda: defaultdict(lambda: defaultdict(int)))
 
